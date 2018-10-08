@@ -15,25 +15,15 @@
   <div>Number of Tier 4 - {{ tFour }}</div>
 </div>
 <br>
-<button class="btn btn-primary" (click)="hireOne()">Tier 1 - {{ tOnePrice }}</button>
-<button class="btn btn-primary" (click)="hireTwo()">Tier 2 - {{ tTwoPrice }}</button>
-<button class="btn btn-primary" (click)="hireThree()">Tier 2 - {{ tThreePrice }}</button>
-<button class="btn btn-primary" (click)="hireFour()">Tier 4 - {{ tFourPrice }}</button>
+<app-producer></app-producer>
 <br>
 <div class="row">
   <div class="col-xs-12" align="left">
       <h3>Improvements</h3>
   </div>
 </div>
-<div class="row" >
-    <div class="col-xs-12" align="left">
-        <button (click)="upgradeOne()">Upgrade Tier 1 - {{ tOneUpgradePrice }}</button>
-        <button (click)="upgradeTwo()">Upgrade Tier 2 - {{ tTwoUpgradePrice }}</button>
-        <button (click)="upgradeThree()">Upgrade Tier 3 - {{ tThreeUpgradePrice }}</button>
-        <button (click)="upgradeFour()">Upgrade Tier 4 - {{ tFourUpgradePrice }}</button>
-    </div>
-  </div>
-  <br>
-  <button (click)="save()">Save</button>
-  <button (click)="load()">Load</button>
+<app-upgrade></app-upgrade>
+<br>
+<button (click)="save()">Save</button>
+<button (click)="load()">Load</button>
 
