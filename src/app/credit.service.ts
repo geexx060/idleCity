@@ -1,15 +1,24 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Output, EventEmitter } from '@angular/core';
+import { Observable, of, Subject, BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CreditService {
-  credits: number = 5;
+  credits: number;
 
   constructor() { }
 
-  getCredits() { 
-    return this.credits;
+  @Output() creditChange: EventEmitter<number> = new EventEmitter();
+
+  getCredits(){
+    this.creditChange.emit(this.credits);
   }
+
+  setCredits(credits: number){
+    this.credits = credits;
+    this.creditChange.emit(this.credits);
+  }
+
 
 }

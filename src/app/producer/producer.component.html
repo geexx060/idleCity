@@ -1,4 +1,14 @@
-<button class="btn btn-primary" (click)="hireOne()">Tier 1 - {{ tOnePrice }}</button>
-<button class="btn btn-primary" (click)="hireTwo()">Tier 2 - {{ tTwoPrice }}</button>
-<button class="btn btn-primary" (click)="hireThree()">Tier 2 - {{ tThreePrice }}</button>
-<button class="btn btn-primary" (click)="hireFour()">Tier 4 - {{ tFourPrice }}</button>
+<h3>Credits: {{ credits }}</h3>
+<div>
+  <div>Credits {{ creditsPerSecond }}/sec</div>
+  <hr>
+</div>
+<div>Number of Tier 1 - {{ tOne }}</div>
+<div>Number of Tier 2 - {{ tTwo }}</div>
+<div>Number of Tier 3 - {{ tThree }}</div>
+<div>Number of Tier 4 - {{ tFour }}</div>
+<br>
+<button class="btn btn-primary" (click)="buyTier(1)">Tier 1 - {{ tOnePrice }}</button>
+<button class="btn btn-primary" (click)="buyTier(2)">Tier 2 - {{ tTwoPrice }}</button>
+<button class="btn btn-primary" (click)="buyTier(3)">Tier 2 - {{ tThreePrice }}</button>
+<button class="btn btn-primary" (click)="buyTier(4)">Tier 4 - {{ tFourPrice }}</button>

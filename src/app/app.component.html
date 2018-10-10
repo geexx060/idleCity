@@ -1,20 +1,7 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <h3>Credits: {{ credits }}</h3>
-<!-- <button (click) = "collectCredit()" >Collect UBI Stipend</button> -->
-<!-- <br> -->
-<div>
-  <div>Credits {{ creditsPerSecond }}/sec</div>
-  <hr>
-  <div>Number of Tier 1 - {{ tOne }}</div>
-  <div>Number of Tier 2 - {{ tTwo }}</div>
-  <div>Number of Tier 3 - {{ tThree }}</div>
-  <div>Number of Tier 4 - {{ tFour }}</div>
-</div>
-<br>
 <app-producer></app-producer>
 <br>
 <div class="row">
@@ -24,6 +11,5 @@
 </div>
 <app-upgrade></app-upgrade>
 <br>
-<button (click)="save()">Save</button>
-<button (click)="load()">Load</button>
+<app-save-load></app-save-load>
 
